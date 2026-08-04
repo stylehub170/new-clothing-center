@@ -55,6 +55,20 @@
     <button type="submit">Place Order</button>
 
 </form>
+<script>
+document.getElementById("productName").value =
+localStorage.getItem("productName");
 
+document.getElementById("productPrice").value =
+"Rs. " + localStorage.getItem("productPrice");
+let price = parseInt(localStorage.getItem("productPrice"));
+
+document.getElementById("totalPrice").value = "Rs. " + price;
+
+document.getElementsByName("quantity")[0].addEventListener("input", function () {
+    let quantity = this.value;
+    document.getElementById("totalPrice").value = "Rs. " + (price * quantity);
+}); 
+</script>
 </body>
-</html>
+        </html>
