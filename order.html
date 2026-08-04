@@ -26,8 +26,25 @@
     <label>City</label><br>
     <input type="text" name="city" placeholder="Enter your city" required><br><br>
 
+<select name="Size" required>
+    <option value="">Select Size</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select><br><br>
+<label>Color</label><br>
+<select name="Color" required>
+    <option value="">Select Color</option>
+    <option value="Black">Black</option>
+    <option value="White">White</option>
+    <option value="Blue">Blue</option>
+    <option value="Red">Red</option>
+</select><br><br>
     <label>Quantity</label><br>
     <input type="number" name="quantity" min="1" value="1" required><br><br>
+    <label>Total Price</label><br>
+<input type="text" id="totalPrice" name="Total Price" readonly><br><br>
 
 
     <label>Payment Method</label><br>
