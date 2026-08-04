@@ -1,5 +1,7 @@
-function buyNow() {
-    alert("Thank you for your order!");
+function buyNow(productName) {
+    localStorage.setItem("productName", productName);
+    window.location.href = "order.html";
+}
 }
 let product = localStorage.getItem("product");
 let price = localStorage.getItem("price");
