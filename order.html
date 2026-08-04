@@ -71,5 +71,8 @@ document.getElementsByName("quantity")[0].addEventListener("input", function () 
     document.getElementById("totalPrice").value = "Rs. " + (price * quantity);
 }); 
 </script>
+let product = localStorage.getItem("productName");
+
+document.getElementById("product").value = product;
 </body>
         </html>
